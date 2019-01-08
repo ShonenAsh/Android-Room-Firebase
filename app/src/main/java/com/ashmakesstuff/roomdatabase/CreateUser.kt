@@ -1,10 +1,9 @@
 package com.ashmakesstuff.roomdatabase
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText
-
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_create_user.*
 
 class CreateUser : AppCompatActivity() {
@@ -20,7 +19,7 @@ class CreateUser : AppCompatActivity() {
         fab.setOnClickListener { view ->
             // TODO() : Save to database
             Snackbar.make(view, "This should save your data", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+                    .setAction("Action", null).show()
         }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
